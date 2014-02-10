@@ -10,3 +10,11 @@ package { 'android-tools-adb':
 }
 ```
 
+Exec provider:
+--------------
+
+```puppet
+exec { '/system/bin/touch /sdcard/foo':
+  provider => adb,
+}
+```
